@@ -3,11 +3,12 @@
 
 <?php
 $err = '';
-$payment = $_POST['payment'];
-$profession = $_POST['profession'];
+$businessName = $_POST['businessname'];
+$category = $_POST['category'];
 $email = $_POST['email'];
 $name = $_POST['fname'];
 $phone = $_POST['phone'];
+$refId = $_POST['myid'];
 
 
 function getUserIpAddr(){
@@ -24,7 +25,7 @@ function getUserIpAddr(){
 }
 
 $to = "info@teafweb.com";
-$subject ="Affiliate request";
+$subject ="referal by Affiliate ";
 $from = "info@teafweb.com";
 $headers = "From:" . $from;
 $ip="";
@@ -55,10 +56,12 @@ else{
 
 
    // mysqli_close($con);
-   echo '200';
-    $message =  "\n Affiliate Name: $name" ."\n payment Type: $payment" ."\n Profession: $profession" . "\n Email: $email" . "\n phone :  $phone";
+  
+    $message =  "\n Affiliate Name: $businessName" ."\n payment Type: $category" ."\n Profession: $email" . "\n Email: $name" . "\n phone :  $phone". "\nrefId: $refId";
     mail($to,$subject,$message,$headers);
-
+    $res = "200";
+    $res = json_encode($res); 
+    echo $res;
     }
 
 

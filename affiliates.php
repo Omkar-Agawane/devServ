@@ -98,10 +98,13 @@
             </div>
             <div id="myThanks" class="hide">
                 <h3 class="h2">"We appreciate your interest and look forward to assisting you further." </h3>
-                <h3 class="h4">Our representative will reach out to you at your registered contact details (email/phone)
-                    for verification purposes.</h3>
+                <h3 class="h4" id="">Our representative will reach out to you at your registered contact details (email/phone) for verification purposes.</h3>
+                <h3 class="h4 theme" id="myAffiliateInfo">Our representative will reach out to you at your registered contact details (email/phone) for verification purposes.</h3>
                 <br>
-                <button class="btn2">Start refering</button>
+                <br>
+                <a href="./refer.php"><button class="btn2">Refer & Earn Commission Now</button></a>
+                <br>
+                <br>
                 <p class="p">For any questions or concerns, please feel free to reach out to us at <span class="theme">
                         info@teafweb.com.</span></p>
 
@@ -114,6 +117,8 @@
     <?php require 'footer.php'; ?>
 
     <script>
+       
+
         const signinFormPrevent = (param) => {
             let formDom = document.getElementById(param);
             if (param == 'mySignFormP1') {
@@ -142,9 +147,10 @@
                 }).then((res) => {
                     return res.text();
                 }).then((body) => {
-                    console.log(body);
+                    console.log("body="+body);
                     document.getElementById("myThanks").classList.remove('hide')
                     document.getElementById("mySignin").classList.add('hide')
+                    document.querySelector("#myAffiliateInfo").innerText = generateId(5)+ document.getElementById("myphone").value;
                 })
             }
 

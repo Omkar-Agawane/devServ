@@ -28,5 +28,6 @@
 </footer>
 
 
-<script src="https://teafweb.com/global/teafweb.js"></script>
+<!--<script src="https://teafweb.com/global/teafweb.js"></script>-->
+<script src="./js/teafweb.js"></script>
 <script src="./project.js"></script>

@@ -66,4 +66,16 @@ const toggle_submenu = (x,y,event)=>{
 
 
 
-
+/* generate random id*/
+/* paass paramaner as int to define lenghth of id */
+const generateId = (lengthOfId)=>{
+  let charaArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let i =0;
+  let CharId = "";
+  while(i < lengthOfId ) {
+     let randomInteger = Math.floor(Math.random()*26)+1;
+      CharId += charaArr[randomInteger]; 
+      i++;
+  }
+  return CharId;
+}
