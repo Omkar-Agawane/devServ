@@ -45,7 +45,7 @@
         <section class="container">
             <div class="align-center m1">
                 <h1 class=" h4">Web Affiliates Program</h1>
-                <h3 class="sub-title h5 m1">Value your reference and earn for your recomondation.</h3>
+                <h3 class="sub-title h5 m1">Value your reference and earn for your recommendation</h3>
             </div>
             <br>
             <br>
@@ -97,12 +97,21 @@
                 </div>
             </div>
             <div id="myThanks" class="hide">
-                <h3 class="h2">"We appreciate your interest and look forward to assisting you further." </h3>
-                <h3 class="h4" id="">Our representative will reach out to you at your registered contact details (email/phone) for verification purposes.</h3>
-                <h3 class="h4 theme" id="myAffiliateInfo">Our representative will reach out to you at your registered contact details (email/phone) for verification purposes.</h3>
+                <h3 class="h2">"We appreciate your interest and look forward to assisting you further" </h3>
+                <h3 class="h2" id="">Our representative will reach out to you at your registered contact details (email/phone) for verification purposes.</h3>
+               <br>
+               <hr class="hr1">
+               <br>
+                <h3 class="h5">Save this for future </h3>
+                <h3 class="h4" >Affiliate Id : <span id="myAffiliateInfo" class="theme">Sorry! your email is already register, We could not generate referral id. Please contact us to check your previous ref id.</span></h3>
                 <br>
-                <br>
+                <hr class="hr1">
                 <a href="./refer.php"><button class="btn2">Refer & Earn Commission Now</button></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <p class="p">For any questions or concerns, please feel free to reach out to us at <span class="theme">

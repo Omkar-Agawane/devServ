@@ -72,8 +72,9 @@ const generateId = (lengthOfId)=>{
   let charaArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let i =0;
   let CharId = "";
+ 
   while(i < lengthOfId ) {
-     let randomInteger = Math.floor(Math.random()*26)+1;
+     let randomInteger = Math.floor(Math.random()*25);
       CharId += charaArr[randomInteger]; 
       i++;
   }
