@@ -3,7 +3,7 @@
 
 <link rel="preload" href="./stylesheet/project.css" as="style">
 <link rel="stylesheet" href="./stylesheet/project.css" >
-<link rel="stylesheet" href="https://teafweb.com/global/teafweb.css">
+<link rel="stylesheet" href="./global/teafweb.css">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 

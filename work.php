@@ -46,7 +46,6 @@
                 <br>
                 <p class="p">One Kalyan is a project by the Ajmera and Mehta Group; One kalyan was created with the inspiration of the ideology of the integral elements of life, how everything is different but complementing each other and becoming one. Located in Yogi Dham in Kalyan.</p>
                 <br>
-                <a href="https://onekalyan.live/" class="hover white " target="_blank">  <h2 class="h2" >Visit &rarr;</h2></a>
             </div>
             <h3 class="h3">onekalyan</h3>
         </div>
@@ -145,6 +144,23 @@
                 <a href="https://theelitex.com/" class="hover white " target="_blank">  <h2 class="h2" >Visit &rarr;</h2></a>
             </div>
             <h3 class="h3">EliteX</h3>
+        </div>
+
+        <div class="work dblue-back" >
+            <div class="z">
+                <a href="https://axislogistix.com/" class="hover white " target="_blank"><h4 class="h6 gray">Audesapere.co</h4></a>
+            </div>
+            <br>
+            <div class="z">
+                <p class="h4"> <strong> Healthcare Clinic & Reasearch Center </strong> </p>
+                <br>
+                <p class="p"> Personalized Constitutional Homeopathic treatments.
+Homeopathy is an advanced science that works on a genetic level & helps to attain sound health. 100% natural, no drug interactions, and non-habit forming.
+                     </p>
+                <br>
+                <a href="https://audesapere.co/" class="hover white " target="_blank">  <h2 class="h2" >Visit &rarr;</h2></a>
+            </div>
+            <h3 class="h3">Audesapere</h3>
         </div>
 
 
