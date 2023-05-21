@@ -18,7 +18,7 @@
             <a href="./products.php" > Product</a>
             <a href="./work.php"> Work</a>
             <a href="./about.php"> About</a>
-            <a href="https://tguide.live" target="_blank" >Blog</a>
+            <a href="./blogs" target="_blank" >Blogs</a>
         </div>
     </div>
 </nav>
