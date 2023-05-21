@@ -38,7 +38,7 @@
 
         <div class="work gray-back" >
             <div class="z">
-                <a href="https://onekalyan.live/" class="hover white " target="_blank"><h4 class="h6 gray">Onekalyan</h4></a>
+                <a href="#" class="hover white " target="_blank"><h4 class="h6 gray">Onekalyan</h4></a>
             </div>
             <br>
             <div class="z">
@@ -148,7 +148,7 @@
 
         <div class="work dblue-back" >
             <div class="z">
-                <a href="https://axislogistix.com/" class="hover white " target="_blank"><h4 class="h6 gray">Audesapere.co</h4></a>
+                <a href="https://audesapere.co/" class="hover white " target="_blank"><h4 class="h6 gray">Audesapere.co</h4></a>
             </div>
             <br>
             <div class="z">
