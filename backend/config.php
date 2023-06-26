@@ -1,9 +1,9 @@
 <?php
-define("WEBSITE", "localhost/teafweb.in/");
+define("WEBSITE", "https://teafweb.com");
 define("SERVER", "localhost");
-define("USERNAME", "teafwebi");
-define("PASSWORD", "123456@Teaf");
-define("DATABASE", "teafwebi_teaf");
+define("USERNAME", "u702940361_teafwebU");
+define("PASSWORD", "+aR8;Z>8F7S");
+define("DATABASE", "u702940361_teafweb");
 
 /*define("WEBSITE", "localhost/teafweb.in/");
 define("SERVER", "localhost");

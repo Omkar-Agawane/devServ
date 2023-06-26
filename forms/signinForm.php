@@ -25,7 +25,7 @@ function getUserIpAddr(){
 }
 
 $to = "info@teafweb.com";
-$subject ="Free Audit request";
+$subject ="Free Audit Request";
 $from = "info@teafweb.com";
 $headers = "From:" . $from;
 $ip="";
@@ -43,7 +43,7 @@ else{
             die("Connection error".mysqli_connect_error());
         }
 
-        $sql = "INSERT INTO `users`(`no`, `fname`, `lname`, `businessName`, `businessType`, `gst`, `ph`, `email`, `website`) VALUES (NULL,'$name','$name','$bname','$btype','$gst','ph','$email','$bwebsite')";
+        $sql = "INSERT INTO `clients`(`id`, `fname`, `lname`, `businessName`, `businessType`, `gst`, `ph`, `email`, `website`, 'role') VALUES (NULL,'$name','$name','$bname','$btype','$gst','ph','$email','$bwebsite','lead')";
 
 
     if (mysqli_query($con, $sql)) {

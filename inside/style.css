@@ -1,0 +1,83 @@
+/*root*/
+:root{
+    --dark-back: rgb(22,25,31);
+}
+
+/*root*/
+
+
+/*deafulat*/
+
+.dark-custom{
+    color: var(--dark-back);
+}
+.container-custom{
+    margin: 2rem auto;
+    width: 80% ;
+
+}
+
+/*custom global*/
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #24ee96c2, #36d8adb4, #36ddc4, #14e3ddac);
+    }
+   .row.content {height: 550px}
+   .sidenav {
+     background-color: #f1f1f1;
+     height: 100%;
+   }
+.dark-custom{
+    background-color: var(--dark-back);
+}
+.flexB_custom{
+    display: flex;
+    justify-content: space-between !important;
+    width: 100vw;
+}
+.flex_custom{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+}
+.link_custom{
+    color: white;
+    text-decoration: none;
+}
+.hover{
+    cursor: pointer;
+}
+.hover:hover{
+    color: #54baa4 !important;
+}
+.cc{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+/*media*/
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        }
+    }
+ /* On small screens, set height to 'auto' for the grid */
+ @media screen and (max-width: 767px) {
+    .row.content {height: auto;}
+   }

@@ -12,8 +12,6 @@
 
     <title>Teafweb Product Sign in</title>
 
-    <meta name="Description" CONTENT="Teafweb is a web developement and design services based in pune, teafweb offers various service for business like website development, web tools, mobile app etc.">
-	<meta name="keywords" content="teafweb, web, teaf,developement,design, sign in" />
     <link rel="icon" href="/res/logo_24x24.png" sizes="24x24">
     <meta property="og:site_name" content="Teafweb- Web developement and design services">
     <meta property="og:title" content="Teafweb- Web developement and design services" />
