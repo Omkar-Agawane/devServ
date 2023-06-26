@@ -43,7 +43,7 @@ else{
             die("Connection error".mysqli_connect_error());
         }
 
-        $sql = "INSERT INTO `clients`(`id`, `fname`, `lname`, `businessName`, `businessType`, `gst`, `ph`, `email`, `website`, 'role') VALUES (NULL,'$name','$name','$bname','$btype','$gst','ph','$email','$bwebsite','lead')";
+        $sql = "INSERT INTO `clients`(`id`, `fname`, `lname`, `businessName`, `businessType`, `gst`, `ph`, `email`, `website`, `role`) VALUES (NULL,'$name','$name','$bname','$btype','$gst','ph','$email','$bwebsite','lead')";
 
 
     if (mysqli_query($con, $sql)) {
