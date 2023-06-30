@@ -46,8 +46,8 @@
                         <option value="Bcom">Bcom</option>
                         <option value="Msc">Msc</option>
                         <option value="Bsc">Bsc</option>
-                        <option value="Bsc">Under Gradution</option>
-                        <option value="Other">Other Gradution</option>
+                        <option value="Bsc">Under Graduation</option>
+                        <option value="Other">Other Graduation</option>
                     </select>
                     <select name="identification" id="identity" class="select" required>
                         <option>Select Document Verification</option>
