@@ -51,10 +51,10 @@
                     </select>
                     <select name="identification" id="identity" class="select" required>
                         <option>Select Document Verification</option>
-                        <option value="BE">Adhar card</option>
-                        <option value="ME">PAN</option>
-                        <option value="BTech">Passport</option>
-                        <option value="MTech">Driving License</option>
+                        <option value="Adhar">Adhar card</option>
+                        <option value="PAN">PAN</option>
+                        <option value="passport">Passport</option>
+                        <option value="driving">Driving License</option>
                     </select>
                     <input id="Addr" name="address" type="text"  class="input" placeholder="Your Address">
                         <br>
