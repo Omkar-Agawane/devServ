@@ -16,7 +16,7 @@
         <a class="sitemap link" href="./privacy">Privacy</a>
         <!-- <a class="sitemap link" href="https://teafweb.in/feedback.php" target="_blank">Feedback</a>-->
         <a class="sitemap link" href="./ticket.php">Raise a Ticket</a>
-        <a class="sitemap link" href="https://inside.teafweb.com" target="_blank"> Login</a>
+        <a class="sitemap link" href="./comming soon.php" target="_blank"> Login</a>
             
     </section>
 
