@@ -26,16 +26,16 @@
             <div class="flex2" id="mySignin">
                 <div>
                 <h3 class="h5 m1">It could be the beginning of a more potent version of yourself.</h3><br>
-                    <form id="mySignFormP2" name="signin"
+                    <form id="mySignFormP2" name="signin" enctype="multipart/form-data"
                         onsubmit="event.preventDefault();signinFormPrevent('mySignFormP2')"
-                        class="form1 gray-container">
+                        class="form1 gray-container" >
                         <input id="myemail" type="email" name="email" class="input" placeholder="Your Email*" required
                             pattern="[a-zA-Z0-9@.]+" minlength="6" maxlength="20">
                         <input id="myname" type="text" name="fname" class="input" placeholder="Your Full Name*" required
                             pattern="[a-zA-Z ]+" minlength="3" maxlength="20">
-                        <input id="phone" name="phone" type="text"  class="input" placeholder="Your Phone No." pattern="[0-9]{10}" minlength="10" maxlength="10">
+                        <input id="phone" name="phone" type="text"  class="input" placeholder="Your Phone No.*" pattern="[0-9]{10}" minlength="10" maxlength="10">
                         <select name="Qualification" id="edu" class="select" required>
-                        <option>Select Qualification</option>
+                        <option>Select Qualification*</option>
                         <option value="BE">B.E.</option>
                         <option value="ME">M.E.</option>
                         <option value="BTech">BTech</option>
@@ -50,13 +50,16 @@
                         <option value="Other">Other Graduation</option>
                     </select>
                     <select name="identification" id="identity" class="select" required>
-                        <option>Select Document Verification</option>
+                        <option>Select Document Verification*</option>
                         <option value="Adhar">Adhar card</option>
                         <option value="PAN">PAN</option>
                         <option value="passport">Passport</option>
                         <option value="driving">Driving License</option>
                     </select>
-                    <input id="Addr" name="address" type="text"  class="input" placeholder="Your Address">
+                    <input id="Addr" name="address" type="text"  class="input" placeholder="Your Address*" required>
+                   
+                    <input id="attachement" name="attachement" type="file"  class="input" placeholder="" required>
+                    <small>Upload Your Resume (Only pdf file)</small>
                         <br>
                         <button class="btn2">Submit</button>
                     </form>

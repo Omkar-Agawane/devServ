@@ -27,9 +27,23 @@ function getUserIpAddr(){
 $to = "info@teafweb.com";
 $subject ="New career profile";
 $from = "info@teafweb.com";
-$headers = "From:" . $from;
+//$headers = "From:" . $from;
 $ip="";
 $server_name = $_SERVER['SERVER_NAME'];
+
+
+
+$boundary = uniqid();
+
+// header information
+$headers = "From:".$from."\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary=\" ".$boundary."\"\r\n";
+
+// attachment
+$attachment = chunk_split(base64_encode(file_get_contents('file.pdf')));
+
+
 
 if($email === NULL){
     $err = "Warning !! <br>
@@ -68,7 +82,20 @@ else{
           
     //mysqli_close($con);
 
-    $message =  "\n Client Name: $name" . "\n Email: $email";
+
+    // message with attachment
+$message = "--".$boundary."\r\n";
+$message .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$message .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$message .= chunk_split(base64_encode($message));
+$message .= "--".$boundary."\r\n";
+$message .= "Content-Type: application/octet-stream; name=\"file.pdf\"\r\n";
+$message .= "Content-Transfer-Encoding: base64\r\n";
+$message .= "Content-Disposition: attachment; filename=\"file.pdf\"\r\n\r\n";
+$message .= $attachment."\r\n";
+$message .= "--".$boundary."--";
+
+  //  $message =  "\n Client Name: $name" . "\n Email: $email";
     mail($to,$subject,$message,$headers);
   $res =  json_encode($err);
     echo $res;
