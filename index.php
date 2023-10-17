@@ -314,7 +314,7 @@
                         <input id="myname" type="text" name="fname" class="input" placeholder="Your Full Name*" required
                             pattern="[a-zA-Z ]+" minlength="3" maxlength="20">
                         <input id="#ph" name="phone" type="text"  class="input" placeholder="Phone*" pattern="[0-9]{10}" required>
-
+                        <input type="date" class="input" name="meeetingDate" id="#meeetingDate" required>
                         <br>
                         <button class="btn2">Book a Visit</button>
                     </form>

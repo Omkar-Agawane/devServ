@@ -6,6 +6,7 @@ $err = 'success';
 $email = $_POST['email'];
 $name = $_POST['fname'];
 $phone = $_POST['phone'];
+$meeetingDate = $_POST['meeetingDate'];
 
 
 function getUserIpAddr(){
@@ -47,7 +48,7 @@ else{
     }*/
     //mysqli_close($con);
 
-    $message =  "\n Client Name: $name" . "\n Email: $email". "\n Phone: $phone";
+    $message =  "\n Client Name: $name" . "\n Email: $email". "\n Phone: $phone" ."\n For Date: $meeetingDate";
    mail($to,$subject,$message,$headers);
   $res =  json_encode($err);
     echo $res;
