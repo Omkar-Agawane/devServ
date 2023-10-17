@@ -5,7 +5,7 @@
 $err = 'success';
 $email = $_POST['email'];
 $name = $_POST['fname'];
-$gst = $_POST['gst'];
+$phone = $_POST['phone'];
 
 
 function getUserIpAddr(){
@@ -22,7 +22,7 @@ function getUserIpAddr(){
 }
 
 $to = "info@teafweb.com";
-$subject ="New Website request";
+$subject ="New Video call request";
 $from = "info@teafweb.com";
 $headers = "From:" . $from;
 $ip="";
@@ -47,8 +47,8 @@ else{
     }*/
     //mysqli_close($con);
 
-    $message =  "\n Client Name: $name" . "\n Email: $email";
-  mail($to,$subject,$message,$headers);
+    $message =  "\n Client Name: $name" . "\n Email: $email". "\n Phone: $phone";
+   mail($to,$subject,$message,$headers);
   $res =  json_encode($err);
     echo $res;
     }

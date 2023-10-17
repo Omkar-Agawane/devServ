@@ -247,7 +247,7 @@
             <div class="text-box">
                 <h5 class="h5 grayScale">Build</h5>
                 <hr class="hr">
-                <p class="p grayScale">Technolgy has many advantages and
+                <p class="p grayScale">Technology has many advantages and
                     disadvantes, we will opt best tech for
                     you which will suits better
                     for your business.</p>
@@ -294,6 +294,43 @@
 
         </section>
 
+
+        <section class="flex-container">
+            <div class="thumbnail">
+                <img class="" src="./res/MrTeafweb.png" alt="discover the business problem">
+            </div>
+            <div class="text-box">
+                <h5 class="h5 grayScale">Hi, schedule a call / Visit</h5>
+                <hr class="hr">
+                <p class="p">If you are in Pune, visit us or schedule virtual meeting</p>
+                <br>
+                
+                <div>
+                <form id="#vmeeting_form" name="signin"
+                        onsubmit="event.preventDefault();scheduleCall()"
+                        class="form1 gray-container">
+                        <input id="myemail" type="email" name="email" class="input" placeholder="Your Email*" required
+                            pattern="[a-zA-Z0-9@._]+" minlength="6" maxlength="50">
+                        <input id="myname" type="text" name="fname" class="input" placeholder="Your Full Name*" required
+                            pattern="[a-zA-Z ]+" minlength="3" maxlength="20">
+                        <input id="#ph" name="phone" type="text"  class="input" placeholder="Phone*" pattern="[0-9]{10}" required>
+
+                        <br>
+                        <button class="btn2">Book a Visit</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
         <section class="contact-container">
             <div class="container">
                     <div class="" id="contact">
@@ -303,7 +340,7 @@
                     <br>
                     <div class="flex3">
                     <a href="./createwebsite"> <button class="btn-trans">Create your website</button></a>
-                        <a href="https://tguide.live" target="_blank"><button class="btn2">Get Help</button></a>
+                        <a href="https://readup.teafweb.com/" target="_blank"><button class="btn2">Get Help</button></a>
                     </div>
                     </div>
                 </div>
@@ -311,17 +348,11 @@
         </section>
         <div class="contact-cta ">
             <div>
-                <p class="h2">Need Assistance? Call Us&nbsp;&nbsp;&nbsp;</p>
-
+                <p class="h2">Need Assistance? Call Us &nbsp;&nbsp;&nbsp;</p>
             </div>
             <img src="./res/phone_sym.png" alt="contact teafweb for business assistance" width="40px">
             <h5 class="h5">  <strong>877-866-3781</strong></h5>
-
-
-        <section class="footer-social">
-
-        </div>
-    </section>
+            </div>
     </main>
 
 
@@ -354,6 +385,29 @@ function pop(){
       }
   })
 }*/
+
+
+    const scheduleCall = ()=>{
+    const form = document.getElementById("#vmeeting_form");
+
+    const formData = new FormData(form);
+    fetch("./forms/callRequest.php",
+    {
+    body: formData,
+    method: "post"
+    }).then((res)=>{
+        
+    console.log(res);
+    return res.json();
+    }).then((data)=>{
+        
+    console.log(data);
+    if(data== 'success'){
+        alert("Thank you, We will connect with you soon!");
+        location.href= "https://teafweb.com";
+    }
+    })
+    };
 
 </script>
 

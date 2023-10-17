@@ -80,3 +80,13 @@ const generateId = (lengthOfId)=>{
   }
   return CharId;
 }
+
+
+/*get this year */
+const getThisYear = ()=>{
+    const DateInstances = new Date();
+    let ThisYear = DateInstances.getFullYear();
+    return ThisYear;
+
+}
+

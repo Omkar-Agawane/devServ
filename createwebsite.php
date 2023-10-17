@@ -80,9 +80,7 @@
             method: "post"
         }).then((res)=>{
             return res.json();
-            console.log(res);
         }).then((data)=>{
-            console.log(data);
             if(data== 'success'){
                 alert("Thank you, We will connect with you soon!");
                 location.href= "https://teafweb.com";

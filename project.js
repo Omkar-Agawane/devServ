@@ -63,3 +63,8 @@ const clearJsAlert = ()=>{
 
 
  }
+
+ /*/*assign foooter year*/
+
+document.getElementById('thisYear').innerHTML =getThisYear();
+

@@ -18,7 +18,7 @@
             <a href="./products.php" > Product</a>
             <a href="./work.php"> Work</a>
             <a href="./about.php"> About</a>
-            <a href="./blogs" target="_blank" >Blogs</a>
+            <a href="https://readup.teafweb.com" target="_blank" >Blogs</a>
         </div>
     </div>
 </nav>
