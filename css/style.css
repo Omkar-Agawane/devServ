@@ -1,3 +1,60 @@
+.about{
+ position: relative;
+ background-color: #8385aa;
+ width: 100%;
+ margin: auto;
+ overflow: hidden;
+}
+.fix{
+  position: absolute;
+}
+
+.about .background-about-vid{
+  position: absolute;
+}
+.about .background-about-vid video{
+  width: 100vw;
+}
+.about .cover-content {
+  color: white;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+.about .h1{
+ text-align: center;
+}
+.about .left_align{
+  text-align: left !important;
+}
+.about details{
+  background-color: #072b4398;
+}
+details summary{
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+/*CONTAINERS*/
+
+.container{
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+
+
+/*CONTAINERS*/
+
+
+
+
+
+
+
+
 .logo img {
   width: 100%;
 }
@@ -188,6 +245,10 @@ hr {
     margin: auto;
     align-content: center;
   }
+
+
+
+
   .modal {
     width: 70%;
     min-height: 30vw;

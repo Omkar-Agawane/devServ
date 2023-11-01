@@ -56,14 +56,8 @@
     padding: 1rem 2rem;
     gap: 1rem;
     color: var(--color-secondary);
-
-
 }
-.container{
-    width: 70%;
-    margin: auto;
-    padding-top: 50px;
-}
+
 .container-middle{
     text-align: center !important;
     width: 80%;

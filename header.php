@@ -1,13 +1,3 @@
-  <!--<div class="preloader">
-   <div class="center">
-            <h1 class="" style="color:white;font-size:36px">Get Professional Help!</h1>
-            <div class="bouncing-loader">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-        </div>
-</div>-->
 <nav class="hide-sm">
     <div class="nav">
         <div class="log">
@@ -37,7 +27,7 @@
            <li>  <a href="./products.php" > Product</a></li>
            <li> <a href="./work.php"> Work</a></li>
            <li> <a href="./about.php"> About</a></li>
-           <li> <a href="https://teafweb.in/" target="_blank" > Insight</a></li>
+           <li> <a href="https://readup.teafweb.com" target="_blank" > Blogs</a></li>
         </div>
     </div>
 </nav>
