@@ -295,7 +295,7 @@
         </section>
 
 
-        <section class="flex-container">
+        <section class="flex-container" id="call_visit">
             <div class="thumbnail">
                 <img class="" src="./res/MrTeafweb.png" alt="discover the business problem">
             </div>

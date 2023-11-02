@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php require './header_files.php'; ?>
     <meta charset="UTF-8">
@@ -10,125 +11,101 @@
 
     <meta name="Description" CONTENT="Teafweb is a company in Pune that helps businesses with making websites, 
     tools for the web, mobile apps, and other services related to web design and development.">
-	<meta name="keywords" content="teafweb, web, teaf,developement,design, website, pune" />
-	<link rel="icon" href="/res/logo_24x24.png" sizes="24x24">
+    <meta name="keywords" content="teafweb, web, teaf,developement,design, website, pune" />
+    <link rel="icon" href="/res/logo_24x24.png" sizes="24x24">
     <meta property="og:site_name" content="Teafweb- Web developement and design services">
     <meta property="og:title" content="Teafweb- Web developement and design services" />
-    <meta property="og:description" content="Teafweb is a web developement and design services based in pune, teafweb offers various service for business like website development, web tools, mobile app etc." />
+    <meta property="og:description"
+        content="Teafweb is a web developement and design services based in pune, teafweb offers various service for business like website development, web tools, mobile app etc." />
 
     <meta property="og:image" itemprop="image" content="res/logo.svg">
-    <meta name="p:domain_verify" content="00b0f39de5f2c576e7877c3b6581890f"/>
+    <meta name="p:domain_verify" content="00b0f39de5f2c576e7877c3b6581890f" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KNR76PW6Q"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2KNR76PW6Q');
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-2KNR76PW6Q');
     </script>
 
     <!-- End Google Tag Manager -->
 
 </head>
 <body>
-<header>
-    <?php require 'header.php';?>
-</header>
-<main class="about">
-
-
-
-<section class="">
-    <div class="background-about-vid">
-        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-            <source src="res/world-background-vid.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="cover-content">
-        <div class="container-middle">
-        <h3 class="h3 fix">TEAFWEB</h3>
-        <h1 class="h1">Welcome to our <span class="special">exceptional</span> web development firm.</h1>
-       
-        <div class="container">
-        <h4 class="h2">Teafweb established in 2019. We pride ourselves on delivering the absolute best web development services to our 
-            clients, leveraging our unmatched expertise in app development, 
-            marketing, and designing. </h4>
-        </div>
-        <div class="container">
-        <h4 class="h2">Our Expertise</h4>
-        <hr class="">
-        <details >
-            <summary class="h2 left_align">Website design and development</summary>
-                <p class="p">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, 
-                international pavilions, award-winning fireworks and seasonal special events.</p>
-            </details>
-            <details>
-            <summary class="h2 left_align">Website design and development</summary>
-                <p class="p">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, 
-                international pavilions, award-winning fireworks and seasonal special events.</p>
-            </details>
-        </div>
-
-       
-        </div>
-        
-    </div>
-
-    <div class="container-m">
-</div>
-
-                    <p class="p"><span class="initial">W</span>Welcome to our exceptional web development firm based in Pune, Maharashtra, established in 2019. We pride ourselves on delivering the absolute best web development services to our clients, leveraging our unmatched expertise in app development, marketing, and designing.
-
-                <p class="p">Our team is comprised of highly skilled professionals who are unequivocally passionate about developing websites that are nothing short of exceptional. With years of experience in the web development industry and an unwavering commitment to staying abreast of the latest trends and technologies, we consistently deliver unparalleled results.
-                </p><br>
-                <p class="p">
-                At our web development firm, we offer an unparalleled range of services, including app development, marketing, and designing. Our app development services are tailor-made to exceed the expectations of our clients, utilizing the latest technologies to create robust, scalable, and high-performance apps that are truly second to none.
-                </p><br>
-                <p class="p">
-                Our marketing services are designed to empower businesses to build their online presence and attract more customers than ever before. We employ a data-driven approach to create highly effective marketing strategies that deliver outstanding and measurable results.
-                </p><br>
-                <p class="p">
-                We also offer designing services that are truly unmatched in the industry, aimed at creating websites that are not only visually stunning but also highly functional and user-friendly. Our exceptional design team utilizes the latest tools and techniques to craft websites that meet the precise and exacting needs of our clients.
-                </p><br>
-                <p class="p">
-                At our web development firm, we are absolutely dedicated to building long-lasting relationships with our clients. We work tirelessly with our clients to fully understand their needs and requirements, and we are fully committed to delivering superlative services that consistently exceed their expectations.
-                </p><br>
-                <p class="p">
-                If you are seeking an unparalleled web development firm that can help you achieve your business goals in ways that are truly exceptional, look no further than us. Contact us today to learn how we can help you take your business to new heights with our unparalleled app development, marketing, and designing services.</p><br>
-                </p><br>
-                    
-
-
+    <header>
+        <?php require 'header.php';?>
+    </header>
+    <main class="about">
+        <section class="">
+            <div class="background-about-vid">
+                <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+                    <source src="res/world-background-vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="cover-content">
+                <div class="container-middle">
+                    <h1 class="h1">Welcome to our <span class="special">exceptional</span> web development firm.</h1>
+                    <div class="container">
+                        <h4 class="h2">Teafweb established in 2019. We pride ourselves on delivering the absolute best
+                            web development services to our
+                            clients, leveraging our unmatched expertise in app development,
+                            marketing, and designing. </h4>
+                    </div>
+                    <div class="container">
+                        <h4 class="h2">Our Expertise</h4>
+                        <hr class="">
+                        <div class="flex1">
+                            <div>
+                                <ol>
+                                    <li class="h2 left_align">Website design and development</li>
+                                    <li class="h2 left_align">Website maintenance and updates</li>
+                                    <li class="h2 left_align">Ui/Ux</li>
+                                    <li class="h2 left_align">Analytics and reporting</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <li class="h2 left_align">Graphic design & branding</li>
+                                <li class="h2 left_align">Product photography and mockups</li>
+                                <li class="h2 left_align">Logo and icon design</li>
+                                <li class="h2 left_align">Package design</li>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flex-container container half">
+                <div> 
+                    <img src="./res/MrTeafweb.png" alt="">
+                   
+                </div>
+                <div>
+                    <h4 class="h4">Story of Teafweb</h4>
+                    <p class="p grayscale">The story of Teafweb is an intriguing evolution. Initially conceptualized as an arm in the manufacturing sector, circumstances, notably the impact of the COVID-19 pandemic, led to a transformation, pivoting Teafweb into a prominent software company.</p>
+    <p class="p grayscale">Although the term "Teafweb" lacks a formal definition in standard dictionaries, it carries profound significance within our organization. Initially, it was conceived as a fusion of "Tech-Leaf," denoted as "Teaf," and subsequently, with its transition into web technologies, it evolved into "Teafweb."</p>
+    <p class="p grayscale">Right from our inception, we deliberately chose not to engage in freelance projects. Instead, our focus has been on partnering with small visionary businesses, guiding them through their journeys. While we encountered a few challenges along the way, we learned and adapted from these experiences. Notably, our commitment to client relationships has been steadfast — we've managed to retain all of our clients, with a track record of zero client losses. Once we commit to a client, we stand by them, even in the face of financial difficulties they might encounter.</p>
+    <p class="p grayscale">Looking ahead, we are dedicated to continuing our journey for many more years, contributing to India's burgeoning vision and growth.</p>
 
-                        <hr>
+                    </div>
+            </div>
 
+    <section class="container gray-container">
+        <div class="flex2">
+            <div>
+            <h4 class="h4">Let's Connect, and explore digital</h4>
+            </div>
+            <div><a href="./#call_visit"><button class="btn2">Connect →</button></div>
+            <div></div>
+        </div>
+    </section>
+    </main>
 
-
-
-
-</section>
-
-
-
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-<?php require 'footer.php'?>
+    <?php require 'footer.php'?>
 
 </body>
 
