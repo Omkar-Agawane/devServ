@@ -65,6 +65,30 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <div class="gray-container" id="createGBusiness">
+        <div class="flex2">
+            <div>
+                <h4 class="h4">Create Google Business Profile</h4>
+                <br>
+                <p class="p">Turn people who find you on Google Search and Maps into new customers with a free Business Profile for your storefront or service area. Personalize your profile with photos, offers, posts, and more.</p>
+                <br>
+                <br>
+                <br>
+
+                <div class="flex3">
+                    <button class="btn-trans">Learn More &rarr;</button>
+                    <button class="btn2" onclick="jump('signin')">Get it @ &#8377;100.00/-</button>
+                </div>
+                <br>
+                <p class="p">Offer for business owners</p>
+            </div>
+            <div>
+                <img src="./res/audit.jpg" alt="" class="small_thumb">
+            </div>
+        </div>
+    </div>
         </div>
         <hr>
 </section>
