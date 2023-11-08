@@ -10,7 +10,7 @@
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
-    move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)
+    move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
 
     $content = file_get_contents($target_file);
     $content = chunk_split(base64_encode($content));
