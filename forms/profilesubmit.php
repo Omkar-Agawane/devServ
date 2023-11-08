@@ -96,9 +96,11 @@ $message .= $attachment."\r\n";
 $message .= "--".$boundary."--";
 
   //  $message =  "\n Client Name: $name" . "\n Email: $email";
-    mail($to,$subject,$message,$headers);
-  $res =  json_encode($err);
+   if( mail($to,$subject,$message,$headers)){
+    $res =  json_encode($err);
     echo $res;
+   }
+  
     }
 
 
