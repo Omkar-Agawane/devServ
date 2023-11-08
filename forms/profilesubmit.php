@@ -27,7 +27,7 @@ function getUserIpAddr(){
 $to = "info@teafweb.com";
 $subject ="New career profile";
 $from = "hr@teafweb.com";
-$headers = "From:" . $from;
+//$headers = "From:" . $from;
 $ip="";
 $server_name = $_SERVER['SERVER_NAME'];
 
@@ -80,7 +80,7 @@ else{
            };
         }
           
-    //mysqli_close($con);
+    mysqli_close($con);
 
 
     // message with attachment
@@ -101,7 +101,9 @@ $message .= "--".$boundary."--";
     //echo $res;
    }
    else{
-
+    $err ="no mail"
+$res =  json_encode($err);
+    echo $res;
    }
   
     }
