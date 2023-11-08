@@ -1,7 +1,7 @@
 <?php
 $filename = 'file.pdf';
     $path = '';
-    $file = $path . "/" . $filename;
+    $file = "./" . $filename;
 
     $mailto = 'info@teafweb.com';
     $subject = 'Subject';
