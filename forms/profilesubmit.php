@@ -4,8 +4,8 @@
     $subject = 'Subject';
     $message = 'My message';
 
-    $file = $_FILES["file"]["tmp_name"];
-    $filename = $_FILES["file"]["name"];
+    $file = $_FILES["file"][0]["tmp_name"];
+    $filename = $_FILES["file"][0]["name"];
 
     $content = file_get_contents($file);
     $content = chunk_split(base64_encode($content));
@@ -33,7 +33,7 @@
     $body .= "--" . $separator . $eol;
     $body .= "Content-Type: application/octet-stream; name=\"" . $filename . "\"" . $eol;
     $body .= "Content-Transfer-Encoding: base64" . $eol;
-    $body .= "Content-Disposition: attachment" . $eol;
+    $body .= "Content-Disposition: attachment;filename=\"". $filename . "\"" . $eol;
     $body .= $content . $eol;
     $body .= "--" . $separator . "--";
 

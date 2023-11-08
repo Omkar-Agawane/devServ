@@ -28,7 +28,7 @@
         <section class="container">
             <div class="flex2" id="mySignin">
                 <div>
-                <h3 class="h5 m1">It could be the beginning of a more potent version of yourself 6</h3><br>
+                <h3 class="h5 m1">It could be the beginning of a more potent version of yourself 7</h3><br>
                 
 
                 <script type="IN/FollowCompany" data-id="76340003" data-counter="bottom"></script>
