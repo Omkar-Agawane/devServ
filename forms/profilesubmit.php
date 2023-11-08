@@ -10,7 +10,7 @@
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
-    $content = file_get_contents($$target_file);
+    $content = file_get_contents($target_file);
     $content = chunk_split(base64_encode($content));
 
     // a random hash will be necessary to send mixed content
