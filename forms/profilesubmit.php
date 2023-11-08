@@ -1,6 +1,4 @@
-<?php include '../backend/config.php';?>
-
-
+<? /*php include '../backend/config.php';?>
 <?php
 $err = 'err';
 $email = $_POST['email'];
@@ -22,8 +20,6 @@ else{
      $err = "No file attached";
 }
  // Read the attachment file content
- $file_content = file_get_contents($file_tmp);
- $file_content = chunk_split(base64_encode($file_content));
 
 
 
@@ -47,15 +43,6 @@ $from = "info@teafweb.com";
 //$headers = "From:" . $from;
 $ip="";
 $server_name = $_SERVER['SERVER_NAME'];
-
-
-
-
- // Email headers
- $headers = "From: $from\r\n";
- $headers .= "MIME-Version: 1.0\r\n";
- $headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n";
-
 
 
 if($email === NULL){
@@ -97,6 +84,10 @@ else{
 
 
     // message with attachment
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php';
 
     $body = "--boundary\r\n";
     $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"\r\n";
@@ -139,8 +130,74 @@ else{
     CREATE TABLE `teafweb`. (`no` INT(255) NOT NULL AUTO_INCREMENT , `email` VARCHAR(255) NOT NULL , `name` VARCHAR(255) NOT NULL , `ph` VARCHAR(255) NOT NULL , `edu` VARCHAR(255) NOT NULL , `docid` VARCHAR(255) NOT NULL , `aadr` VARCHAR(255) NOT NULL , PRIMARY KEY (`no`)) ENGINE = InnoDB; 
 
 */
+?>
 
 
 
+
+
+<?php
+
+$err = 'err';
+$email = $_POST['email'];
+$name = $_POST['fname'];
+$ph = $_POST['phone'];
+$edu = $_POST['Qualification'];
+$docid = $_POST['identification'];
+$addr = $_POST['address'];
+
+    // Recipient's email
+    $recipient_email = $_POST['email'];
+
+    // Sender's email
+    $from_email = 'hr@teafweb.com';
+    $from_name = 'HR Teafweb';
+
+    // Email subject and body
+    $subject = 'Email with Attachment';
+    $message = 'This email contains an attachment.';
+
+    // Attachment details
+    $file_tmp = $_FILES['file']['tmp_name'];
+    $file_name = $_FILES['file']['name'];
+    $file_size = $_FILES['file']['size'];
+    $file_type = $_FILES['file']['type'];
+
+    // Set up PHPMailer
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php'; // Include PHPMailer autoloader
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.hostinger.com'; // Your SMTP server
+        $mail->SMTPAuth = true;
+        $mail->Username = 'hr@teafweb.com'; // SMTP username
+        $mail->Password = '123456@Teaf'; // SMTP password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 465;
+
+        // Sender and recipient
+        $mail->setFrom($from_email, $from_name);
+        $mail->addAddress($recipient_email);
+
+        // Email content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        // Attachment
+        $mail->addAttachment($file_tmp, $file_name);
+
+        // Send the email
+        $mail->send();
+        echo 'Email has been sent with the attachment.';
+    } catch (Exception $e) {
+        echo "Email could not be sent. Error: {$mail->ErrorInfo}";
+    }
 
 ?>
