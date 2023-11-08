@@ -27,7 +27,7 @@ function getUserIpAddr(){
 $to = "info@teafweb.com";
 $subject ="New career profile";
 $from = "hr@teafweb.com";
-//$headers = "From:" . $from;
+$headers = "From:" . $from;
 $ip="";
 $server_name = $_SERVER['SERVER_NAME'];
 
