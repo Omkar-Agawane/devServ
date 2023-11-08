@@ -97,26 +97,39 @@ else{
     mysqli_close($con);
 
 
-
     // message with attachment
-    $message = 'This email contains an attachment.';
 
-
-$body = "--boundary\r\n";
-$body .= "Content-Type: text/plain; charset=\"iso-8859-1\"\r\n";
-$body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-$body .= $message . "\r\n\r\n";
-$body .= "--boundary\r\n";
-$body .= "Content-Type: $file_type; name=\"$file_name\"\r\n";
-$body .= "Content-Transfer-Encoding: base64\r\n";
-$body .= "Content-Disposition: attachment; filename=\"$file_name\"\r\n\r\n";
-$body .= $file_content . "\r\n";
-$body .= "--boundary--";
+    $body = "--boundary\r\n";
+    $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"\r\n";
+    $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $body .= $message . "\r\n\r\n";
+    $body .= "--boundary\r\n";
+    $body .= "Content-Type: $file_type; name=\"$file_name\"\r\n";
+    $body .= "Content-Transfer-Encoding: base64\r\n";
+    $body .= "Content-Disposition: attachment; filename=\"$file_name\"\r\n\r\n";
+    $body .= $file_content . "\r\n";
+    $body .= "--boundary--";
 
    // $message =  "\n Client Name: $name" . "\n Email: $email";
-    mail($to,$subject,$body,$headers);
-  $res =  json_encode($err);
-    echo $res;
+    if(mail($to,$subject,$message,$headers)){
+        $res =  json_encode($err);
+        echo $res;
+    }
+    else{
+        $res ="no mail";
+        echo $res;
+    }
+  
+
+
+
+
+
+
+
+
+
+
     }
 
 
