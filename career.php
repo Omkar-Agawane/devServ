@@ -29,14 +29,6 @@
             <div class="flex2" id="mySignin">
                 <div>
                 <h3 class="h5 m1">It could be the beginning of a more potent version of yourself.</h3><br>
-                
-                <div class="m1">
-                <p class="p">Follow Teafweb on linkedin for update and opportunity</p>
-                <script type="IN/FollowCompany" data-id="76340003" data-counter="bottom"></script>
-                <br>
-                <br>
-                </div>
-
                     <form id="mySignFormP2" name="signin" enctype="multipart/form-data"
                         onsubmit="event.preventDefault();signinFormPrevent('mySignFormP2')"
                         class="form1 gray-container" >
