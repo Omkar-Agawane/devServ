@@ -10,6 +10,23 @@ $edu = $_POST['Qualification'];
 $docid = $_POST['identification'];
 $addr = $_POST['address'];
 
+ // Attachment details
+ if(isset($_FILES['file'])){
+    $file_tmp = $_FILES['file']['tmp_name'];
+    $file_name = $_FILES['file']['name'];
+    $file_size = $_FILES['file']['size'];
+    $file_type = $_FILES['file']['type'];
+
+}
+else{
+     //return echo "No file attached";
+}
+ // Read the attachment file content
+ $file_content = file_get_contents($file_tmp);
+ $file_content = chunk_split(base64_encode($file_content));
+
+
+
 
 function getUserIpAddr(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
@@ -39,9 +56,6 @@ $boundary = uniqid();
 $headers = "From:".$from."\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: multipart/mixed; boundary=\" ".$boundary."\"\r\n";
-
-// attachment
-$attachment = chunk_split(base64_encode(file_get_contents('file.pdf')));
 
 
 
@@ -83,20 +97,24 @@ else{
     mysqli_close($con);
 
 
+
     // message with attachment
-$message = "--".$boundary."\r\n";
-$message .= "Content-Type: text/plain; charset=UTF-8\r\n";
-$message .= "Content-Transfer-Encoding: base64\r\n\r\n";
-$message .= chunk_split(base64_encode($message));
-$message .= "--".$boundary."\r\n";
-$message .= "Content-Type: application/octet-stream; name=\"file.pdf\"\r\n";
-$message .= "Content-Transfer-Encoding: base64\r\n";
-$message .= "Content-Disposition: attachment; filename=\"file.pdf\"\r\n\r\n";
-$message .= $attachment."\r\n";
-$message .= "--".$boundary."--";
+    $message = 'This email contains an attachment.';
+
+
+$body = "--boundary\r\n";
+$body .= "Content-Type: text/plain; charset=\"iso-8859-1\"\r\n";
+$body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+$body .= $message . "\r\n\r\n";
+$body .= "--boundary\r\n";
+$body .= "Content-Type: $file_type; name=\"$file_name\"\r\n";
+$body .= "Content-Transfer-Encoding: base64\r\n";
+$body .= "Content-Disposition: attachment; filename=\"$file_name\"\r\n\r\n";
+$body .= $file_content . "\r\n";
+$body .= "--boundary--";
 
    // $message =  "\n Client Name: $name" . "\n Email: $email";
-    mail($to,$subject,$message,$headers);
+    mail($to,$subject,$body,$headers);
   $res =  json_encode($err);
     echo $res;
     }
