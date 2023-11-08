@@ -26,7 +26,7 @@ function getUserIpAddr(){
 
 $to = "info@teafweb.com";
 $subject ="New career profile";
-$from = "info@teafweb.com";
+$from = "hr@teafweb.com";
 //$headers = "From:" . $from;
 $ip="";
 $server_name = $_SERVER['SERVER_NAME'];
@@ -99,6 +99,9 @@ $message .= "--".$boundary."--";
    if( mail($to,$subject,$message,$headers)){
     //$res =  json_encode($err);
     //echo $res;
+   }
+   else{
+
    }
   
     }
