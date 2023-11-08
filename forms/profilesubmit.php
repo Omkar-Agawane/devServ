@@ -19,7 +19,7 @@ $addr = $_POST['address'];
 
 }
 else{
-     return echo "No file attached";
+     $err = "No file attached";
 }
  // Read the attachment file content
  $file_content = file_get_contents($file_tmp);
