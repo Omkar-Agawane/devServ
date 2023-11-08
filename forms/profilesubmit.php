@@ -1,8 +1,19 @@
 <?php
+include '../backend/config.php';
 
-    $mailto = 'info@teafweb.com';
-    $subject = 'Subject';
-    $message = 'My message';
+function getUserIpAddr(){
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        //ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        //ip pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }else{
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
+
 
     $file = $_FILES["file"]["tmp_name"];
     $filename = $_FILES["file"]["name"];
@@ -10,43 +21,40 @@
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
+
     move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+    $link="https://teafweb.com/forms/.$target_file";
 
-    $content = file_get_contents($target_file);
-    $content = chunk_split(base64_encode($content));
 
-    // a random hash will be necessary to send mixed content
-    $separator = md5(time());
 
-    // carriage return type (RFC)
-    $eol = "\r\n";
+    $mailto = "info@teafweb.com";
+    $subject ="New career profile";
+    $from = "info@teafweb.com";
+    $ip="";
+    $server_name = $_SERVER['SERVER_NAME'];
 
     // main header (multipart mandatory)
-    $headers = "From: name <info@teafweb.com>" . $eol;
-    $headers .= "MIME-Version: 1.0" . $eol;
-    $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
-    $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
-    $headers .= "This is a MIME encoded message." . $eol;
+    $headers = "From: name <info@teafweb.com>";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=iso-8859-1\n";
 
     // message
-    $body = "--" . $separator . $eol;
-    $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
-    $body .= "Content-Transfer-Encoding: 8bit" . $eol;
-    $body .= $message . $eol;
+    $err = 'err';
+    $email = $_POST['email'];
+    $name = $_POST['fname'];
+    $ph = $_POST['phone'];
+    $edu = $_POST['Qualification'];
+    $docid = $_POST['identification'];
+    $addr = $_POST['address'];
+
+    $body ="Name:\t $name \n\t Email:\t $email \n\t Phone: \t$ph \n\n\n Link: \t\t$link ";
 
     // attachment
-    $body .= "--" . $separator . $eol;
-    $body .= "Content-Type: application/octet-stream; name=\"" . $filename . "\"" . $eol;
-    $body .= "Content-Transfer-Encoding: base64" . $eol;
-    $body .= "Content-Disposition: attachment;filename=\"". $filename . "\"" . $eol;
-    $body .= $content . $eol;
-    $body .= "--" . $separator . "--";
 
     //SEND Mail
     if (mail($mailto, $subject, $body, $headers)) {
         echo "mail send ... OK"; // or use booleans here
     } else {
         echo "mail send ... ERROR!";
-        print_r( error_get_last() );
     }
     ?>
