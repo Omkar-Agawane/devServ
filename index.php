@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php require './header_files.php'; ?>
     <meta charset="UTF-8">
@@ -8,7 +9,8 @@
 
     <meta name="Description"
         content="Teafweb is a web developement and design services based in pune, teafweb offers various service for business like website development, web tools, mobile app etc.">
-    <meta name="keywords" content="teafweb, web, teaf,developement,design, business, business tools, marketing, web3, social marketing" />
+    <meta name="keywords"
+        content="teafweb, web, teaf,developement,design, business, business tools, marketing, web3, social marketing" />
     <title>Teafweb- A web design agency</title>
 
     <!--SEO-->
@@ -20,7 +22,7 @@
         content="Teafweb is a web developement and design services based in pune, teafweb offers various service for business like website development, web tools, mobile app etc." />
     <meta property="og:image" itemprop="image" content="res/logo.svg">
     <meta name="p:domain_verify" content="00b0f39de5f2c576e7877c3b6581890f" />
-  <!--  <link rel="canonical" href="https://teafweb.com" />-->
+    <!--  <link rel="canonical" href="https://teafweb.com" />-->
     <!--SEO-->
 
     <!-- Google Tag Manager -->
@@ -28,12 +30,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KNR76PW6Q"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2KNR76PW6Q');
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-2KNR76PW6Q');
     </script>
 
     <!-- End Google Tag Manager -->
@@ -84,7 +87,8 @@
                 <div class="#">
                     <h1 class=" h1 animate__animated animate__fadeInDown">Business Tools</h1>
                     <h2 class="h2 animate__animated animate__fadeInUp">Manage business activity seamless with various
-                        <span class="special">webtool</span> for better productivity.</h2>
+                        <span class="special">webtool</span> for better productivity.
+                    </h2>
                 </div>
                 <div class="">
                     <img class="animate__animated animate__fadeInDown" src="./res/business-tool.webp"
@@ -103,73 +107,79 @@
                 <br>
                 <p class="body-medium special margin"> <strong>Design</strong></p>
                 <div class="flex-wrapped ">
-                   <div >
-                       <img class="img-small img-gray margin" src="./res/figma.png" alt="figma tools for designing">
-                       <p class="h5 grayScale">Figma</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/photoshop.png" alt="photoshop tools for designing">
-                       <p class="h5 grayScale">Photoshop</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/ai.png" alt="illutrator tools for designing">
-                       <p class="h5 grayScale">Illustrator</p>
-                   </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/figma.png" alt="figma tools for designing">
+                        <p class="h5 grayScale">Figma</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/photoshop.png"
+                            alt="photoshop tools for designing">
+                        <p class="h5 grayScale">Photoshop</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/ai.png" alt="illutrator tools for designing">
+                        <p class="h5 grayScale">Illustrator</p>
+                    </div>
                 </div>
                 <br>
                 <br>
                 <p class="body-medium special margin"> <strong>Web</strong></p>
                 <div class="flex-wrapped ">
-                   <div >
-                       <img class="img-small img-gray margin" src="./res/VUE.png" alt="figma tools for designing">
-                       <p class="h5 grayScale">Vue.js</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/WORDPRESS.png" alt="photoshop tools for designing">
-                       <p class="h5 grayScale">Wordpress</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/WEBFLOW.png" alt="illutrator tools for designing">
-                       <p class="h5 grayScale">Webflow</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/NODE.png" alt="illutrator tools for designing">
-                       <p class="h5 grayScale">Node.js</p>
-                   </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/VUE.png" alt="figma tools for designing">
+                        <p class="h5 grayScale">Vue.js</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/WORDPRESS.png"
+                            alt="photoshop tools for designing">
+                        <p class="h5 grayScale">Wordpress</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/WEBFLOW.png"
+                            alt="illutrator tools for designing">
+                        <p class="h5 grayScale">Webflow</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/NODE.png"
+                            alt="illutrator tools for designing">
+                        <p class="h5 grayScale">Node.js</p>
+                    </div>
                 </div>
                 <br>
                 <br>
                 <p class="body-medium special margin"> <strong>Mobile</strong></p>
                 <div class="flex-wrapped ">
-                   <div >
-                       <img class="img-small img-gray margin" src="./res/IONIC.png" alt="figma tools for designing">
-                       <p class="h5 grayScale">Ionic</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/FIREBASE.png" alt="photoshop tools for designing">
-                       <p class="h5 grayScale">Firebase</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/VUE.png" alt="illutrator tools for designing">
-                       <p class="h5 grayScale">Vue.js</p>
-                   </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/IONIC.png" alt="figma tools for designing">
+                        <p class="h5 grayScale">Ionic</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/FIREBASE.png"
+                            alt="photoshop tools for designing">
+                        <p class="h5 grayScale">Firebase</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/VUE.png" alt="illutrator tools for designing">
+                        <p class="h5 grayScale">Vue.js</p>
+                    </div>
                 </div>
                 <br>
                 <br>
                 <p class="body-medium special margin"> <strong>System & Database</strong></p>
                 <div class="flex-wrapped ">
-                   <div >
-                       <img class="img-small img-gray margin" src="./res/FIREBASE.png" alt="figma tools for designing">
-                       <p class="h5 grayScale">Firebase</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/GCP.png" alt="photoshop tools for designing">
-                       <p class="h5 grayScale">Google Cloud</p>
-                   </div>
-                   <div>
-                       <img class="img-small img-gray margin" src="./res/MYSQL.png" alt="illutrator tools for designing">
-                       <p class="h5 grayScale" >MySql</p>
-                   </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/FIREBASE.png" alt="figma tools for designing">
+                        <p class="h5 grayScale">Firebase</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/GCP.png" alt="photoshop tools for designing">
+                        <p class="h5 grayScale">Google Cloud</p>
+                    </div>
+                    <div>
+                        <img class="img-small img-gray margin" src="./res/MYSQL.png"
+                            alt="illutrator tools for designing">
+                        <p class="h5 grayScale">MySql</p>
+                    </div>
                 </div>
                 <br>
                 <br>
@@ -187,21 +197,21 @@
                 <br><br><br>
                 <br><br><br>
                 <section id="partners" class="container-middle gray-container">
-                <p class="h5 special margin"> <strong>Partners</strong></p>
-                <p class="h5 grayScale margin"> <strong>In assosiation with best market leader</strong></p>
-                <div class="pr-flex-container">
-                <div >
-                       <img class="img-med " src="./res/godaddy.png" alt="godaddy teafweb partner">
-                   </div>
-                   <div >
-                       <img class="img-med " src="./res/razorpay.png" alt="razorpay teafweb partner">
-                   </div>
-                   <div>
-                       <img class="img-med " src="./res/sendinblue.png" alt="sendinblue teafweb partner">
-                   </div>
-                </div>
-                <br>
-        </section>
+                    <p class="h5 special margin"> <strong>Partners</strong></p>
+                    <p class="h5 grayScale margin"> <strong>In assosiation with best market leader</strong></p>
+                    <div class="pr-flex-container">
+                        <div>
+                            <img class="img-med " src="./res/godaddy.png" alt="godaddy teafweb partner">
+                        </div>
+                        <div>
+                            <img class="img-med " src="./res/razorpay.png" alt="razorpay teafweb partner">
+                        </div>
+                        <div>
+                            <img class="img-med " src="./res/sendinblue.png" alt="sendinblue teafweb partner">
+                        </div>
+                    </div>
+                    <br>
+                </section>
             </div>
         </section>
         <br>
@@ -304,16 +314,16 @@
                 <hr class="hr">
                 <p class="p">If you are in Pune, visit us or schedule virtual meeting</p>
                 <br>
-                
-                <div>
-                <form id="#vmeeting_form" name="signin"
-                        onsubmit="event.preventDefault();scheduleCall()"
+
+                <div class="">
+                    <form id="#vmeeting_form" name="signin" onsubmit="event.preventDefault();scheduleCall()"
                         class="form1 gray-container">
                         <input id="myemail" type="email" name="email" class="input" placeholder="Your Email*" required
                             pattern="[a-zA-Z0-9@._]+" minlength="6" maxlength="50">
                         <input id="myname" type="text" name="fname" class="input" placeholder="Your Full Name*" required
                             pattern="[a-zA-Z ]+" minlength="3" maxlength="20">
-                        <input id="#ph" name="phone" type="text"  class="input" placeholder="Phone*" pattern="[0-9]{10}" required>
+                        <input id="#ph" name="phone" type="text" class="input" placeholder="Phone*" pattern="[0-9]{10}"
+                            required>
                         <input type="date" class="input" name="meeetingDate" id="#meeetingDate" required>
                         <br>
                         <button class="btn2">Book a Visit</button>
@@ -324,26 +334,19 @@
 
         </section>
 
-
-
-
-
-
-
-
         <section class="contact-container">
             <div class="container">
-                    <div class="" id="contact">
-                        <h5 class="h6 white">Ready to get started ?</h5>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="flex3">
-                    <a href="./createwebsite"> <button class="btn-trans">Create your website</button></a>
-                        <a href="https://readup.teafweb.com/" target="_blank"><button class="btn2">Get Help</button></a>
-                    </div>
-                    </div>
+                <div class="" id="contact">
+                    <h5 class="h6 white">Ready to get started ?</h5>
                 </div>
+                <br>
+                <br>
+                <div class="flex3">
+                    <a href="./createwebsite"> <button class="btn-trans">Create your website</button></a>
+                    <a href="https://readup.teafweb.com/" target="_blank"><button class="btn2">Get Help</button></a>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
         <div class="contact-cta ">
@@ -351,8 +354,8 @@
                 <p class="h2">Need Assistance? Call Us &nbsp;&nbsp;&nbsp;</p>
             </div>
             <img src="./res/phone_sym.png" alt="contact teafweb for business assistance" width="40px">
-            <h5 class="h5">  <strong>877-866-3781</strong></h5>
-            </div>
+            <h5 class="h5"> <strong>877-866-3781</strong></h5>
+        </div>
     </main>
 
 
@@ -368,7 +371,7 @@
 </body>
 
 <script>
-    /*document.getElementById("pop").addEventListener('click', pop);
+/*document.getElementById("pop").addEventListener('click', pop);
 
 function pop(){
   fetch('https://updates.push.services.mozilla.com/wpush/v2/gAAAAABjH…BcVjC5OCsauQA0HDG-q_O5WJl17ls1QG_SrUNHr6LTcjlxKZS5VvB2mio09g',
@@ -387,28 +390,26 @@ function pop(){
 }*/
 
 
-    const scheduleCall = ()=>{
+const scheduleCall = () => {
     const form = document.getElementById("#vmeeting_form");
 
     const formData = new FormData(form);
-    fetch("./forms/callRequest.php",
-    {
-    body: formData,
-    method: "post"
-    }).then((res)=>{
-        
-    console.log(res);
-    return res.json();
-    }).then((data)=>{
-        
-    console.log(data);
-    if(data== 'success'){
-        alert("Thank you, We will connect with you soon!");
-        location.href= "https://teafweb.com";
-    }
-    })
-    };
+    fetch("./forms/callRequest.php", {
+        body: formData,
+        method: "post"
+    }).then((res) => {
 
+        console.log(res);
+        return res.json();
+    }).then((data) => {
+
+        console.log(data);
+        if (data == 'success') {
+            alert("Thank you, We will connect with you soon!");
+            location.href = "https://teafweb.com";
+        }
+    })
+};
 </script>
 
 </html>

@@ -36,73 +36,85 @@
     <!-- End Google Tag Manager -->
 
 </head>
+
 <body>
     <header>
         <?php require 'header.php';?>
     </header>
     <main class="about">
-        <section class="">
-            <div class="background-about-vid">
-                <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-                    <source src="res/world-background-vid.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="cover-content">
-                <div class="container-middle">
-                    <h1 class="h1">Welcome to our <span class="special">exceptional</span> web development firm.</h1>
-                    <div class="container">
-                        <h4 class="h2">Teafweb established in 2019. We pride ourselves on delivering the absolute best
-                            web development services to our
-                            clients, leveraging our unmatched expertise in app development,
-                            marketing, and designing. </h4>
-                    </div>
-                    <div class="container">
-                        <h4 class="h2">Our Expertise</h4>
-                        <hr class="">
-                        <div class="flex1">
-                            <div>
-                                <ol>
-                                    <li class="h2 left_align">Website design and development</li>
-                                    <li class="h2 left_align">Website maintenance and updates</li>
-                                    <li class="h2 left_align">Ui/Ux</li>
-                                    <li class="h2 left_align">Analytics and reporting</li>
-                                </ol>
-                            </div>
-                            <div>
-                                <li class="h2 left_align">Graphic design & branding</li>
-                                <li class="h2 left_align">Product photography and mockups</li>
-                                <li class="h2 left_align">Logo and icon design</li>
-                                <li class="h2 left_align">Package design</li>
+        <section class="mob-hide container-background">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+                        <source src="res/background_wave.mp4" type="video/mp4">
+                    </video>
+
+        <div class="cover-content">
+                    <div class="container-middle">
+                        <h1 class="h1">Welcome to our <span class="special">exceptional</span> web development firm.</h1>
+                    
+                        <div class="container">
+                            <h4 class="h2">Our Expertise</h4>
+                            <hr class="">
+                            <div class="flex1">
+                                <div>
+                                    <ol>
+                                        <li class="h2 left_align">Website design and development</li>
+                                        <li class="h2 left_align">Website maintenance and updates</li>
+                                        <li class="h2 left_align">Ui/Ux</li>
+                                        <li class="h2 left_align">Analytics and reporting</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <li class="h2 left_align">Graphic design & branding</li>
+                                    <li class="h2 left_align">Product photography and mockups</li>
+                                    <li class="h2 left_align">Logo and icon design</li>
+                                    <li class="h2 left_align">Package design</li>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+              
         </section>
-        <div class="flex-container container half">
-                <div> 
+       
+        <section class="about" >
+            <div class="flex-container container half">
+                <div>
                     <img src="./res/MrTeafweb.png" alt="">
-                   
                 </div>
                 <div>
+                <div class="container">
+                        
+                        </div>
                     <h4 class="h4">Story of Teafweb</h4>
-                    <p class="p grayscale">The story of Teafweb is an intriguing evolution. Initially conceptualized as an arm in the manufacturing sector, circumstances, notably the impact of the COVID-19 pandemic, led to a transformation, pivoting Teafweb into a prominent software company.</p>
-    <p class="p grayscale">Although the term "Teafweb" lacks a formal definition in standard dictionaries, it carries profound significance within our organization. Initially, it was conceived as a fusion of "Tech-Leaf," denoted as "Teaf," and subsequently, with its transition into web technologies, it evolved into "Teafweb."</p>
-    <p class="p grayscale">Right from our inception, we deliberately chose not to engage in freelance projects. Instead, our focus has been on partnering with small visionary businesses, guiding them through their journeys. While we encountered a few challenges along the way, we learned and adapted from these experiences. Notably, our commitment to client relationships has been steadfast — we've managed to retain all of our clients, with a track record of zero client losses. Once we commit to a client, we stand by them, even in the face of financial difficulties they might encounter.</p>
-    <p class="p grayscale">Looking ahead, we are dedicated to continuing our journey for many more years, contributing to India's burgeoning vision and growth.</p>
+                    <p class="p grayscale">The story of Teafweb is an intriguing evolution. Initially conceptualized as an
+                        arm in the manufacturing sector, circumstances, notably the impact of the COVID-19 pandemic, led to
+                        a transformation, pivoting Teafweb into a prominent software company.</p>
+                    <p class="p grayscale">Although the term "Teafweb" lacks a formal definition in standard dictionaries,
+                        it carries profound significance within our organization. Initially, it was conceived as a fusion of
+                        "Tech-Leaf," denoted as "Teaf," and subsequently, with its transition into web technologies, it
+                        evolved into "Teafweb."</p>
+                    <p class="p grayscale">Right from our inception, we deliberately chose not to engage in freelance
+                        projects. Instead, our focus has been on partnering with small visionary businesses, guiding them
+                        through their journeys. While we encountered a few challenges along the way, we learned and adapted
+                        from these experiences. Notably, our commitment to client relationships has been steadfast — we've
+                        managed to retain all of our clients, with a track record of zero client losses. Once we commit to a
+                        client, we stand by them, even in the face of financial difficulties they might encounter.</p>
+                    <p class="p grayscale">Looking ahead, we are dedicated to continuing our journey for many more years,
+                        contributing to India's burgeoning vision and growth.</p>
 
-                    </div>
+                </div>
             </div>
-
-    <section class="container gray-container">
-        <div class="flex2">
-            <div>
-            <h4 class="h4">Let's Connect, and explore digital</h4>
+        </section>
+       
+        <section class="container gray-container mob-hide">
+            <div class="flex2">
+                <div>
+                    <h4 class="h4">Let's Connect, and explore digital</h4>
+                </div>
+                <div><a href="./#call_visit"><button class="btn2">Connect →</button></div>
+                <div></div>
             </div>
-            <div><a href="./#call_visit"><button class="btn2">Connect →</button></div>
-            <div></div>
-        </div>
-    </section>
+        </section>
     </main>
 
     <?php require 'footer.php'?>
