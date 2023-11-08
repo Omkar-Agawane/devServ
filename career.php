@@ -91,13 +91,13 @@
 </body>
 
 <script>
-    const signinFormPrevent = (param)=>{
+    const signinFormPrevent = async (param)=>{
 
             const form = document.getElementById("mySignFormP2");
 
         const formData = new FormData(form);
         console.log(formData);
-        fetch("./forms/profilesubmit.php",
+       await fetch("./forms/profilesubmit.php",
         {
             body: formData,
             method: "post"
