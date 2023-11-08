@@ -50,12 +50,11 @@ $server_name = $_SERVER['SERVER_NAME'];
 
 
 
-$boundary = uniqid();
 
-// header information
-$headers = "From:".$from."\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: multipart/mixed; boundary=\" ".$boundary."\"\r\n";
+ // Email headers
+ $headers = "From: $from\r\n";
+ $headers .= "MIME-Version: 1.0\r\n";
+ $headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n";
 
 
 
