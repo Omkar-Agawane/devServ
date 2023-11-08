@@ -1,45 +1,16 @@
-<?php
-// recipient email address
-$to = 'info@teafweb.com';
+<?php \
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// subject of the email
-$subject = "taaa";
+$email = new PHPMailer();
+$email->SetFrom('info@teafweb.com', 'Your Name'); //Name is optional
+$email->Subject   = 'Message Subject';
+$email->Body      = $bodytext;
+$email->AddAddress( 'info@teafweb.com' );
 
-// message body
-$message = "tada";
+$file_to_attach = '/';
 
-// from
-$from ='hr@teafweb.com';
+$email->AddAttachment( $file_to_attach , 'file.pdf' );
 
-// boundary
-$boundary = uniqid();
-
-// header information
-$headers = "From: $from\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: multipart/mixed; boundary=\".$boundary.\"\r\n";
-
-// attachment
-$file = $_FILES["file"]["tmp_name"];
-$filename = $_FILES["file"]["name"];
-$attachment = chunk_split(base64_encode(file_get_contents('file.pdf')));
-
-// message with attachment
-$message = "--".$boundary."\r\n";
-$message .= "Content-Type: text/plain; charset=UTF-8\r\n";
-$message .= "Content-Transfer-Encoding: base64\r\n\r\n";
-$message .= chunk_split(base64_encode($message));
-$message .= "--".$boundary."\r\n";
-$message .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n";
-$message .= "Content-Transfer-Encoding: base64\r\n";
-$message .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
-$message .= $attachment."\r\n";
-$message .= "--".$boundary."--";
-
-// send email
-if (mail($to, $subject, $message, $headers)) {
-    echo "Email with attachment sent successfully.";
-} else {
-    echo "Failed to send email with attachment.";
-}
+return $email->Send();
 ?>

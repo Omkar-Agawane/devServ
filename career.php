@@ -67,7 +67,7 @@
                     </select>
                     <input id="Addr" name="address" type="text"  class="input" placeholder="Your Address*" required>
                    
-                    <input id="attachement" name="file" type="file"  class="input" placeholder="" required>
+                    <input id="file" name="file" type="file"  class="input" placeholder="" required>
                     <small>Upload your file (Only pdf file)</small>
                         <br>
                         <button class="btn2">Submit</button>
