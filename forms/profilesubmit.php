@@ -23,7 +23,7 @@ function getUserIpAddr(){
 
 
     move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
-    $link="https://teafweb.com/forms/.$target_file";
+    $link="https://teafweb.com/forms/$target_file";
 
 
 
@@ -47,14 +47,17 @@ function getUserIpAddr(){
     $docid = $_POST['identification'];
     $addr = $_POST['address'];
 
-    $body ="Name:\t $name \n\t Email:\t $email \n\t Phone: \t$ph \n\n\n Link: \t\t$link ";
+    $body ="Name:\t $name \n\t Email:\t $email \n\t Phone: \t$ph \n\n\n Link: \t\t ";
 
     // attachment
+    
 
     //SEND Mail
     if (mail($mailto, $subject, $body, $headers)) {
-        echo "mail send ... OK"; // or use booleans here
+        $res = json_encode("200");
+        echo $res;
     } else {
-        echo "mail send ... ERROR!";
+        $res = json_encode("404");
+        echo $res;
     }
     ?>

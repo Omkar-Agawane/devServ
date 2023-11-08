@@ -29,11 +29,6 @@
             <div class="flex2" id="mySignin">
                 <div>
                 <h3 class="h5 m1">It could be the beginning of a more potent version of yourself </h3><br>
-                
-                <div class="m1">
-                    <script type="IN/FollowCompany" data-id="76340003" data-counter="bottom"></script>
-               
-                </div>
                 <br>
                
 
@@ -82,7 +77,10 @@
             <div id="myThanks" class="hide">
                 <h3 class="h4">For verification, our HR representative will contact you via your registered
                     email address/Phone. </h3>
-                <h3 class="h2">Thank you for. </h3>
+                <h3 class="h2">Thank you! <br> Check our Linkedin Page for any updates</h3>
+                <div class="m1">
+                    <script type="IN/FollowCompany" data-id="76340003" data-counter="bottom"></script>
+                </div>
             </div>
         </section>
     </main>
@@ -104,54 +102,19 @@
             body: formData,
             method: "post"
         }).then((res)=>{
-            return res.text();
+            return res.json();
             console.log(res);
         }).then((data)=>{
             console.log(data);
             if(data== '200'){
-                alert("Thank you, We will connect with you soon!");
-               // location.href= "https://teafweb.com";
+                document.getElementById("myThanks").classList.remove("hide");
+                document.getElementById("mySignin").classList.add("hide");
             }
             else{
                 alert(`Database error ${data}`);
             }
         })
     };
-
- /*   const check = () => {
-        let domain = document.getElementById("myDname").value
-
-        const formData = new FormData();
-        formData.append('domain', document.getElementById("myDname").value);
-        fetch('./forms/domainCheck.php', {
-            body: formData,
-            method: "post"
-        }).then((res) => {
-            return res.json();
-        }).then((data) => {
-           // console.log("price: ₹" + price);
-            if (data.price >0) {
-                let price = (data.price / 1000000) * 85;
-                let formDom = document.getElementById('mySignFormP1');
-                let msg = document.getElementById('msg');
-                msg.innerHTML = `${domain} is available! <br> Approx Value: ₹${price}`
-                formDom.classList.add("hide");
-                document.getElementById('mySignFormP2').classList.remove("hide");
-            } else {
-                let alert = document.getElementById('alert');
-                alert.innerText = `${domain} is not avaialble, try another unique name.`
-            }
-
-
-
-            /* data.forEach((val)=>{
-               const pTag = document.createElement("p");
-               pTag.innerText = val.domain;
-               document.body.appendChild(pTag);
-              })
-
-        })
-    };*/
 
 
 </script>
