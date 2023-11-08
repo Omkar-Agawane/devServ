@@ -22,7 +22,7 @@ $headers .= "Content-Type: multipart/mixed; boundary=\".$boundary.\"\r\n";
 // attachment
 $file = $_FILES["file"]["tmp_name"];
 $filename = $_FILES["file"]["name"];
-$attachment = chunk_split(base64_encode(file_get_contents($file)));
+$attachment = chunk_split(base64_encode(file_get_contents('file.pdf')));
 
 // message with attachment
 $message = "--".$boundary."\r\n";
