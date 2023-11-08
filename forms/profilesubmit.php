@@ -4,8 +4,8 @@
     $subject = 'Subject';
     $message = 'My message';
 
-    $file = $_FILES["file"][0]["tmp_name"];
-    $filename = $_FILES["file"][0]["name"];
+    $file = $_FILES["file"]["tmp_name"];
+    $filename = $_FILES["file"]["name"];
 
     $content = file_get_contents($file);
     $content = chunk_split(base64_encode($content));
