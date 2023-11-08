@@ -97,11 +97,12 @@ $message .= "--".$boundary."--";
 
   //  $message =  "\n Client Name: $name" . "\n Email: $email";
    if( mail($to,$subject,$message,$headers)){
-    //$res =  json_encode($err);
-    //echo $res;
+    $err ="mail"
+    $res =  json_encode($err);
+    echo $res;
    }
    else{
-    $err ="no mail"
+    $err ="no mail";
 $res =  json_encode($err);
     echo $res;
    }
