@@ -97,8 +97,8 @@ $message .= "--".$boundary."--";
 
   //  $message =  "\n Client Name: $name" . "\n Email: $email";
    if( mail($to,$subject,$message,$headers)){
-    $res =  json_encode($err);
-    echo $res;
+    //$res =  json_encode($err);
+    //echo $res;
    }
   
     }
