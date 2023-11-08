@@ -84,7 +84,7 @@ else{
 
 
     // message with attachment
-/*$message = "--".$boundary."\r\n";
+$message = "--".$boundary."\r\n";
 $message .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $message .= "Content-Transfer-Encoding: base64\r\n\r\n";
 $message .= chunk_split(base64_encode($message));
@@ -93,9 +93,9 @@ $message .= "Content-Type: application/octet-stream; name=\"file.pdf\"\r\n";
 $message .= "Content-Transfer-Encoding: base64\r\n";
 $message .= "Content-Disposition: attachment; filename=\"file.pdf\"\r\n\r\n";
 $message .= $attachment."\r\n";
-$message .= "--".$boundary."--";*/
+$message .= "--".$boundary."--";
 
-    $message =  "\n Client Name: $name" . "\n Email: $email";
+   // $message =  "\n Client Name: $name" . "\n Email: $email";
     mail($to,$subject,$message,$headers);
   $res =  json_encode($err);
     echo $res;
