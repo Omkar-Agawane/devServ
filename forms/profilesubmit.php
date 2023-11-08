@@ -47,7 +47,7 @@ function getUserIpAddr(){
     $docid = $_POST['identification'];
     $addr = $_POST['address'];
 
-    $body ="Name:\t $name \n\t Email:\t $email \n\t Phone: \t$ph \n\n\n Link: \t\t ";
+    $body ="Name:\t $name \n\t Email:\t $email \n\t Phone: \t$ph \n\n\n Link: \t\t$link ";
 
     // attachment
     
