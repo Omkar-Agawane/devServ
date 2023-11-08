@@ -96,6 +96,7 @@
             const form = document.getElementById("mySignFormP2");
 
         const formData = new FormData(form);
+        console.log(formData);
         fetch("./forms/profilesubmit.php",
         {
             body: formData,
