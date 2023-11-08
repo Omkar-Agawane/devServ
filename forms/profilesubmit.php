@@ -4,7 +4,7 @@
     $subject = 'Subject';
     $message = 'My message';
 
-    $file = $_FILES["file"]["tmp_name"];
+    $file = $_FILES["file"];
     $filename = $_FILES["file"]["name"];
 
     $content = file_get_contents($file);
