@@ -1,65 +1,45 @@
 <?php
+// recipient email address
+$to = 'info@teafweb.com';
 
-$err = 'err';
-$email = $_POST['email'];
-$name = $_POST['fname'];
-$ph = $_POST['phone'];
-$edu = $_POST['Qualification'];
-$docid = $_POST['identification'];
-$addr = $_POST['address'];
+// subject of the email
+$subject = "taaa";
 
-    // Recipient's email
-    $recipient_email = $_POST['email'];
+// message body
+$message = "tada";
 
-    // Sender's email
-    $from_email = 'hr@teafweb.com';
-    $from_name = 'HR Teafweb';
+// from
+$from ='hr@teafweb.com';
 
-    // Email subject and body
-    $subject = 'Email with Attachment';
-    $message = 'This email contains an attachment.';
+// boundary
+$boundary = uniqid();
 
-    // Attachment details
-    $file_tmp = $_FILES['file']['tmp_name'];
-    $file_name = $_FILES['file']['name'];
-    $file_size = $_FILES['file']['size'];
-    $file_type = $_FILES['file']['type'];
+// header information
+$headers = "From: $from\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary=\".$boundary.\"\r\n";
 
-    // Set up PHPMailer
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+// attachment
+$file = $_FILES["file"]["tmp_name"];
+$filename = $_FILES["file"]["name"];
+$attachment = chunk_split(base64_encode(file_get_contents($file)));
 
-    require 'vendor/autoload.php'; // Include PHPMailer autoloader
+// message with attachment
+$message = "--".$boundary."\r\n";
+$message .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$message .= "Content-Transfer-Encoding: base64\r\n\r\n";
+$message .= chunk_split(base64_encode($message));
+$message .= "--".$boundary."\r\n";
+$message .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n";
+$message .= "Content-Transfer-Encoding: base64\r\n";
+$message .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
+$message .= $attachment."\r\n";
+$message .= "--".$boundary."--";
 
-    $mail = new PHPMailer(true);
-
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.hostinger.com'; // Your SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = 'hr@teafweb.com'; // SMTP username
-        $mail->Password = '123456@Teaf'; // SMTP password
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 465;
-
-        // Sender and recipient
-        $mail->setFrom($from_email, $from_name);
-        $mail->addAddress($recipient_email);
-
-        // Email content
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-
-        // Attachment
-        $mail->addAttachment($file_tmp, $file_name);
-
-        // Send the email
-        $mail->send();
-        echo 'Email has been sent with the attachment.';
-    } catch (Exception $e) {
-        echo "Email could not be sent. Error: {$mail->ErrorInfo}";
-    }
-
+// send email
+if (mail($to, $subject, $message, $headers)) {
+    echo "Email with attachment sent successfully.";
+} else {
+    echo "Failed to send email with attachment.";
+}
 ?>
