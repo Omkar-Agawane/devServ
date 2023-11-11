@@ -1,0 +1,29 @@
+User-agent: *
+allow: /index.php
+
+User-agent: Googlebot
+Allow: /index.php
+User-agent: Googlebot
+Allow: /services.html
+User-agent: Googlebot
+Allow: /blog/index.php
+
+
+User-agent: Googlebot
+Allow: /work.php
+
+User-agent: Googlebot
+Allow: /about.php
+
+User-agent: Googlebot
+Allow: /services.php
+
+User-agent: Googlebot
+Allow: https://blog.teafweb.com
+
+User-agent: *
+Disallow: /term.html
+User-agent: Googlebot
+Allow: /term.html
+
+Sitemap: https://teafweb.com/sitemap.xml
