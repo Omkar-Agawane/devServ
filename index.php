@@ -312,7 +312,7 @@
             <div class="text-box">
                 <h5 class="h5 grayScale">Hi, schedule a call / Visit</h5>
                 <hr class="hr">
-                <p class="p">If you are in Pune, visit us or schedule virtual meeting</p>
+                <p class="p">Visit us or schedule meeting</p>
                 <br>
 
                 <div class="">
@@ -324,7 +324,7 @@
                             pattern="[a-zA-Z ]+" minlength="3" maxlength="20">
                         <input id="#ph" name="phone" type="text" class="input" placeholder="Phone*" pattern="[0-9]{10}"
                             required>
-                        <input type="date" class="input" name="meeetingDate" id="#meeetingDate" required>
+                        <input type="date" class="input" name="meeetingDate" id="#meeetingDate" required placeholder="dd/mm/yy">
                         <br>
                         <button class="btn2">Book a Visit</button>
                     </form>
@@ -351,7 +351,7 @@
         </section>
         <div class="contact-cta ">
             <div>
-                <p class="h2">Need Assistance? Call Us &nbsp;&nbsp;&nbsp;</p>
+                <p class="medium">Need Assistance? Call Us &nbsp;&nbsp;&nbsp;</p>
             </div>
             <img src="./res/phone_sym.png" alt="contact teafweb for business assistance" width="40px">
             <h5 class="h5"> <strong>877-866-3781</strong></h5>

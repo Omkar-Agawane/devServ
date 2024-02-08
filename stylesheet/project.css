@@ -396,10 +396,10 @@ nav {
     align-items: center;
     margin: auto;
     width: 70%;
+    color: white;
 }
 
 .nav-menu a {
-    color: white;
     margin: 0px 20px;
     padding: 10px 0;
     position: relative;
@@ -530,7 +530,6 @@ nav {
     align-items: center;
     padding: 90px 0px 90px 0px;
 }
-
 .flex-container-dark {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -552,11 +551,6 @@ nav {
     margin: 20px 0px 0px 0px;
 
 }
-
-.h6 {
-    font-size: 6.4em;
-}
-
 .dark-background {
     display: flex;
     justify-content: space-around;
@@ -580,9 +574,10 @@ nav {
 /*contact*/
 .contact-container {
     background-color: var(--color-theme);
-    min-height: 300px;
+    min-height: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 50px 0;
 }
 
 .contact-form {
@@ -661,17 +656,6 @@ nav {
     color: black;
 }
 
-.copyright {
-    margin: 100px 0 20px 0px;
-    text-align: center;
-    font-family: var(--theme-font);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.1em;
-    color: #797979;
-}
 
 /*footer*/
 
@@ -1137,11 +1121,6 @@ nav {
         color: black;
     }
 
-    .container {
-        width: 80%;
-        margin: auto;
-        padding-top: 50px;
-    }
 
     .container-m {
         width: 100%;

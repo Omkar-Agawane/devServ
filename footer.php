@@ -1,10 +1,10 @@
 <footer class="container">
-
-    <section class="footer-social">
-        <a href="https://twitter.com/teafweb" target="_blank"><img src="./res/013-twitter-1 1.svg"> </img></a>
-        <a href="https://www.youtube.com/channel/UCXqOkvzSewVhXRZAjfUwiQQ" target="_blank"><img src="./res/002-youtube 1.svg">
+  <section class="footer-social">
+        <a href="https://twitter.com/teafweb"  target="_blank" ><img alt="social icon medium" src="./res/Vector-2.png"> </img></a>
+        <a href="https://www.youtube.com/channel/UCXqOkvzSewVhXRZAjfUwiQQ" target="_blank"><img alt="social icon medium" src="./res/Vector-1.png">
             </img></a>
-        <a href="https://www.linkedin.com/company/teafwebprofile" target="_blank"><img src="./res/031-linkedin 1.svg"> </img></a>
+        <a href="https://www.linkedin.com/company/teafwebprofile" target="_blank"><img alt="social icon medium" src="./res/Vector-3.png"> </img></a>
+        <a href="https://www.instagram.com/teafweb" target="_blank"><img alt="social icon medium" src="./res/Vector.png"> </img></a>
     </section>
     <section class="sitemap">
         <a class="sitemap link" href="./">Home</a>
@@ -18,14 +18,19 @@
         <a class="sitemap link" href="./comming soon.php" target="_blank"> Login</a>
             
     </section>
+ 
 
-
-    <section class="copyright">
-        <hr>
-        <p>Copyrights 2021-<span id="thisYear">224</span> <a>teafweb</a> services</p>
-    </section>
+   
 </footer>
 
+<section class="copyright">
+<hr>
+<p class="small">© 2021-<span id="thisYear">224</span> <a href="www.teafweb.com">Teafweb</a> Services | All rights reserved</p>
+
+
+     <p class="small">Pimple Gurav Rd, Kawade Nagar, Trimurti Colony, Pimple Gurav, Pune, Pimpri-Chinchwad, Maharashtra 411061</p>
+    
+ </section>
 
 <!--<script src="https://teafweb.com/global/teafweb.js"></script>-->
 <script src="./js/teafweb.js"></script>

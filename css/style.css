@@ -12,6 +12,19 @@
 
 
 
+
+ 
+  a img:hover{
+    color: grey;
+    transform: scale(1.5);
+  }
+  a{
+    color:inherit !important;
+  }
+  .sitemap a:hover{
+   color: gray !important;
+  }
+
 .about{
  position: relative;
  width: 100%;
@@ -64,11 +77,7 @@ details summary{
 
 /*CONTAINERS*/
 
-.container{
-  width: 70%;
-  margin: auto;
-  padding-top: 50px;
-}
+
 .flex1{
   display: flex;
   justify-content: space-between;
@@ -227,19 +236,81 @@ hr {
 .bouncing-loader > div:nth-child(3) {
   animation-delay: 0.4s;
 }
+/*footer*/
+.copyright {
+  margin: 10px 0 20px 0px;
+  text-align: center;
+  font-family: var(--theme-font);
+  font-style: normal;
+  font-weight: 300;
+  color: #797979;
+  width: 85%;
+  margin: auto;
+  padding: 1rem;
+}
+
+
+
+
+
 
 /*animation ends*/
 
 /* large screen desktop*/
 @media only screen and (min-width: 992px) {
+  img[alt="social icon small"]{
+    width: 24px;
+  }
+  img[alt="social icon medium"]{
+    width: 48px;
+  }
   .hide-lg {
     display: none;
   }
+  .small{
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .medium{
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .h6 {
+    font-size: 32px;
+}
+.container{
+  width: 70%;
+  margin: auto;
+}
+
 }
 
 /*mobile*/
 
 @media only screen and (max-width: 768px) {
+  img[alt="social icon small"]{
+    width: 18px;
+  }
+  img[alt="social icon medium"]{
+    width: 24px;
+  }
+  .small{
+    font-size: 8px;
+    line-height: 1rem;
+  }
+  .medium{
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .h6 {
+    font-size: 24px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+
   .menu-icon {
     margin: 0px 0;
   }
@@ -278,10 +349,6 @@ hr {
     margin: auto;
     align-content: center;
   }
-
-
-
-
   .modal {
     width: 70%;
     min-height: 30vw;
